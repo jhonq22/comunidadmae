@@ -2414,7 +2414,7 @@ input[type="submit"] {
 }
 
 .header-section .header-wrapper .logo a img {
-    width: 120%;
+    width: 100%;
 }
 
 @media (min-width: 992px) {
