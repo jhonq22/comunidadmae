@@ -22,6 +22,96 @@
       <link rel="stylesheet" href="./assets/css/animate.min.css">
 
     <link rel="shortcut icon" href="assets/mae.png" type="image/x-icon">
+
+    <style type="text/css">
+        
+
+.clearfix::after,
+.calendar ol::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* ================
+Calendar Styling */
+.calendar {
+  border-radius: 10px;
+}
+
+.month {
+  font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  .month {
+    font-size: 3.5rem;
+  }
+}
+
+.calendar ol li {
+  float: left;
+  width: 14.28571%;
+}
+
+.calendar .day-names {
+  border-bottom: 1px solid #eee;
+}
+
+.calendar .day-names li {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.calendar .days li {
+  border-bottom: 1px solid #eee;
+  min-height: 8rem;
+}
+
+.calendar .days li .date {
+  margin: 0.5rem 0;
+}
+
+.calendar .days li .event {
+  font-size: 0.75rem;
+  padding: 0.8rem;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 0.5rem;
+  margin-bottom: 1px;
+}
+
+.calendar .days li .event.span-2 {
+  width: 200%;
+}
+
+.calendar .days li .event.begin {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.calendar .days li .event.end {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.calendar .days li .event.clear {
+  background: none;
+}
+
+.calendar .days li:nth-child(n+29) {
+  border-bottom: none;
+}
+
+.calendar .days li.outside .date {
+  color: #ddd;
+}
+
+
+
+    </style>
     
   
 </head>
@@ -47,7 +137,7 @@
             <div class="header-wrapper">
                 <div class="logo">
                     <a href="index.html">
-                           <img src="./assets/mae2.png" style="height:150px; width:120px" alt="logo">
+                          <img src="./assets/mae2.png" style="height:150px; width:120px" alt="logo">
                     </a>
                 </div>
                 <ul class="menu ">
@@ -102,8 +192,11 @@
         </div>
         <div class="container animate__animated animate__backInLeft animate__slow">
             <div class="page-header-content cl-white">
-                <h2 class="title"> Sección Streamers </h2>
-              
+                <h2 class="title"> Calendario Oficial</h2>
+                <ul class="breadcrumb">
+                   
+                  
+             </ul>
             </div>
         </div>
     </section>
@@ -115,95 +208,161 @@
         <div class="container ">
             <div class="section-header animate__animated animate__backInLeft animate__slow">
                 <h5 class="cate">COMUNIDAD MAE</h5>
-                <h2 class="title mb-5"> Nuestros Streamers </h2>
+                
                 
             </div>
+
+
+
             <div class="row justify-content-center mb-40-none animate__animated animate__backInLeft animate__slow">
-                <div class="col-lg-4 col-md-6 ">
-                    <div class="team-item">
-                         <a href="nano_team.html">
-                        <div class="team-thumb">
-                            <img src="./assets/mae2.png" style="height:352px; width: 350px;" alt="team">
-                        </div>
-                        <div class="team-content">
-                            <h4 class="title">
-                                <a href="#0">Nano Fernandez</a>
-                            </h4>
-                            <span class="info">Streamers  Oficial MAE</span>
-                                <a 
-                                  href="nano_team.html"  class="button-4 h-float">
-                                  Ver Perfil
-                                </a>
+                <div class="col-lg-12 col-md-12 ">
+ 
 
-                                <a href="https://www.twitch.tv/" target="_blank">
-                                    <img src="./assets/iconos/twitch.png" class="m-1 h-rotate-360" style="height:60px">
-                                </a>
-                           
 
-                          
+                                <!-- Calendar -->
+  <div class="calendar shadow bg-white p-5">
+    <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
+      <h2 class="month font-weight-bold mb-5 text-uppercase">Calendario Noviembre</h2>
+    </div>
+   
+    <ol class="day-names list-unstyled">
+      <li class="font-weight-bold text-uppercase">Lunes</li>
+      <li class="font-weight-bold text-uppercase">Martes</li>
+      <li class="font-weight-bold text-uppercase">Miercoles</li>
+      <li class="font-weight-bold text-uppercase">Jueves</li>
+      <li class="font-weight-bold text-uppercase">Viernes</li>
+      <li class="font-weight-bold text-uppercase">Sabado</li>
+      <li class="font-weight-bold text-uppercase">Domingo</li>
+    </ol>
 
-                        </div>
-                         </a>
-                    </div>
+    <ol class="days list-unstyled">
+      <li>
+        <div class="date">1</div>
+        <div class="event bg-success">Nano </br> 7PM-8PM</div>
+      </li>
+      <li>
+        <div class="date">2</div>
+      </li>
+      <li>
+        <div class="date">3</div>
+      </li>
+      <li>
+        <div class="date">4</div>
+      </li>
+      <li>
+        <div class="date">5</div>
+      </li>
+      <li>
+        <div class="date">6</div>
+      </li>
+      <li>
+        <div class="date">7</div>
+      </li>
+      <li>
+        <div class="date">8</div>
+      </li>
+      <li>
+        <div class="date">9</div>
+      </li>
+      <li>
+        <div class="date">10</div>
+      </li>
+      <li>
+        <div class="date">11</div>
+      </li>
+      <li>
+        <div class="date">12</div>
+      </li>
+      <li>
+        <div class="date">13</div>
+        <div class="event all-day begin span-2 bg-warning">Klevin </br> 3PM-5PM</div>
+      </li>
+      <li>
+        <div class="date">14</div>
+      </li>
+      <li>
+        <div class="date">15</div>
+        <div class="event all-day end bg-success">Klevin </br> 9PM-11PM</div>
+      </li>
+      <li>
+        <div class="date">16</div>
+      </li>
+      <li>
+        <div class="date">17</div>
+      </li>
+      <li>
+        <div class="date">18</div>
+      </li>
+      <li>
+        <div class="date">19</div>
+      </li>
+      <li>
+        <div class="date">20</div>
+      </li>
+      <li>
+        <div class="date">21</div>
+        <div class="event bg-primary">Klevin </br> 3PM-5PM</div>
+        <div class="event bg-success">Nano </br> 6PM-10PM</div>
+      </li>
+      <li>
+        <div class="date">22</div>
+ 
+      </li>
+      <li>
+        <div class="date">23</div>
+      </li>
+      <li>
+        <div class="date">24</div>
+      </li>
+      <li>
+        <div class="date">25</div>
+      </li>
+      <li>
+        <div class="date">26</div>
+      </li>
+      <li>
+        <div class="date">27</div>
+      </li>
+      <li>
+        <div class="date">28</div>
+      </li>
+      <li>
+        <div class="date">29</div>
+      </li>
+      <li>
+        <div class="date">30</div>
+      </li>
+      <li>
+        <div class="date">31</div>
+      </li>
+      <li class="outside">
+        <div class="date">1</div>
+      </li>
+      <li class="outside">
+        <div class="date">2</div>
+      </li>
+      <li class="outside">
+        <div class="date">3</div>
+      </li>
+      <li class="outside">
+        <div class="date">4</div>
+      </li>
+    </ol>
+  </div>
+</div>
+                      
+
+
+
+
+
+
                 </div>
 
 
 
-                  <div class="col-lg-4 col-md-6 ">
-                    <div class="team-item">
-                         <a href="klevin_team.html">
-                        <div class="team-thumb">
-                            <img src="./assets/mae2.png" style="height:352px; width: 350px;" alt="team">
-                        </div>
-                        <div class="team-content">
-                            <h4 class="title">
-                                <a href="#0">Klevin</a>
-                            </h4>
-                            <span class="info">Streamers  Oficial MAE</span>
-                       
-                                 <a 
-                                  href="klevin_team.html"  class="button-4 h-float">
-                                  Ver Perfil
-                                </a>
-
-                                <a href="https://www.twitch.tv/" target="_blank">
-                                    <img src="./assets/iconos/twitch.png" class="m-1 h-rotate-360" style="height:60px">
-                                </a>
-                          
-
-                           
-                        </div>
-                          </a>
-                    </div>
-                </div>
-
-                    <div class="col-lg-4 col-md-6 ">
-                    <div class="team-item">
-                         <a href="natu_team.html">
-                        <div class="team-thumb">
-                            <img src="./assets/mae2.png" style="height:352px; width: 350px;" alt="team">
-                        </div>
-                        <div class="team-content">
-                            <h4 class="title">
-                                <a href="#0">Natu</a>
-                            </h4>
-                            <span class="info">Streamers  Patrocinada MAE </span>
-                       
-                                  <a 
-                                  href="natu_team.html"  class="button-4 h-float">
-                                  Ver Perfil
-                                </a>
-
-                                <a href="https://www.twitch.tv/not_zavi" target="_blank">
-                                    <img src="./assets/iconos/twitch.png" class="m-1 h-rotate-360" style="height:60px">
-                                </a>
-                          
-                           
-                        </div>
-                      </a>
-
-                    </div>
-                </div>
+                  
+             
  
             
                 
