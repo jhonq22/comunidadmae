@@ -20,10 +20,119 @@
     <link rel="stylesheet" href="./assets/css/main.css">
          <link rel="stylesheet" href="./assets/css/catto.min.css">
       <link rel="stylesheet" href="./assets/css/animate.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="shortcut icon" href="assets/mae.png" type="image/x-icon">
+
+        <style>@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
     
-  
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+   
+    
+   
+    
+}
+
+::selection {
+    color: #fff;
+    background: #1cc7d0;
+}
+
+.wrapper {
+    height: 400px;
+    width: 320px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.wrapper .card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.wrapper:hover>.front-face {
+    transform: rotateY(-180deg);
+}
+
+.wrapper .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.wrapper .back-face {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+
+.wrapper:hover>.back-face {
+    transform: rotateY(0deg);
+}
+
+.wrapper .back-face img {
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+}
+
+.wrapper .back-face .info {
+    text-align: center;
+}
+
+.back-face .info .title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.back-face ul {
+    display: flex;
+}
+
+.back-face ul a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    margin: 0 5px;
+    line-height: 38px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+    transition: all 0.5s ease;
+}
+
+.back-face ul a:hover {
+    color: #1cc7d0;
+    border-color: #1cc7d0;
+    background: linear-gradient(375deg, transparent, transparent);
+}</style>
+    
+         <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+
 </head>
 
 <body>
@@ -102,8 +211,8 @@
         </div>
         <div class="container animate__animated animate__backInLeft animate__slow">
             <div class="page-header-content cl-white">
-                <h2 class="title"> Sección 
-                Streamers </h2>
+                <h2 class="title"> Nosotros 
+                 </h2>
               
             </div>
         </div>
@@ -116,102 +225,44 @@
         <div class="container ">
             <div class="section-header animate__animated animate__backInLeft animate__slow">
                 <h5 class="cate">COMUNIDAD MAE</h5>
-                <h2 class="title mb-5"> Nuestros Streamers </h2>
+                <h2 class="title mb-5"> Nuestro Equipo </h2>
                 
             </div>
             <div class="row justify-content-center mb-40-none animate__animated animate__backInLeft animate__slow">
-                <div class="col-lg-4 col-md-6 ">
-                    <div class="team-item">
-                         <a href="nano_team.html">
-                        <div class="team-thumb">
-                            <img src="./assets/mae2.png" style="height:352px; width: 350px;" alt="team">
-                        </div>
-                        <div class="team-content">
-                            <h4 class="title">
-                                <a href="#0">Nano Fernandez</a>
-                            </h4>
-                            <span class="info">Streamers  Oficial MAE</span>
-                                <a 
-                                  href="nano_team.html"  class="button-4 h-float">
-                                  Ver Perfil
-                                </a>
+               
 
-                                <a href="https://www.twitch.tv/" target="_blank">
-                                    <img src="./assets/iconos/twitch.png" class="m-1 h-rotate-360" style="height:60px">
-                                </a>
-                           
-
-                          
-
-                        </div>
-                         </a>
-                    </div>
-                </div>
-
-
-
-                  <div class="col-lg-4 col-md-6 ">
-                    <div class="team-item">
-                         <a href="klevin_team.html">
-                        <div class="team-thumb">
-                            <img src="./assets/mae2.png" style="height:352px; width: 350px;" alt="team">
-                        </div>
-                        <div class="team-content">
-                            <h4 class="title">
-                                <a href="#0">Klevin</a>
-                            </h4>
-                            <span class="info">Streamers  Oficial MAE</span>
-                       
-                                 <a 
-                                  href="klevin_team.html"  class="button-4 h-float">
-                                  Ver Perfil
-                                </a>
-
-                                <a href="https://www.twitch.tv/" target="_blank">
-                                    <img src="./assets/iconos/twitch.png" class="m-1 h-rotate-360" style="height:60px">
-                                </a>
-                          
-
-                           
-                        </div>
-                          </a>
-                    </div>
-                </div>
-
-                    <div class="col-lg-4 col-md-6 ">
-                    <div class="team-item">
-                         <a href="natu_team.html">
-                        <div class="team-thumb">
-                            <img src="./assets/mae2.png" style="height:352px; width: 350px;" alt="team">
-                        </div>
-                        <div class="team-content">
-                            <h4 class="title">
-                                <a href="#0">Natu</a>
-                            </h4>
-                            <span class="info">Streamers  Patrocinada MAE </span>
-                       
-                                  <a 
-                                  href="natu_team.html"  class="button-4 h-float">
-                                  Ver Perfil
-                                </a>
-
-                                <a href="https://www.twitch.tv/not_zavi" target="_blank">
-                                    <img src="./assets/iconos/twitch.png" class="m-1 h-rotate-360" style="height:60px">
-                                </a>
-                          
-                           
-                        </div>
-                      </a>
-
-                    </div>
-                </div>
- 
-            
-                
-             
-                
-            </div>
+                                       <div class="wrapper">
+    <div class="card front-face">
+        <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+    </div>
+    <div class="card back-face">
+        <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+        <div class="info">
+            <div class="title">
+                CodingLab</div>
+            <p>
+                User interface designer and <br>front-end developer</p>
         </div>
+        <ul>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </ul>
+    </div>
+</div>
+         
+
+
+
+
+
+
+
+
+
+
+  
     </section>
     <!--============= Team Section Ends Here =============-->
 
