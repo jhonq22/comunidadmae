@@ -22,6 +22,96 @@
       <link rel="stylesheet" href="./assets/css/animate.min.css">
 
     <link rel="shortcut icon" href="assets/mae.png" type="image/x-icon">
+
+       <style type="text/css">
+        
+
+.clearfix::after,
+.calendar ol::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* ================
+Calendar Styling */
+.calendar {
+  border-radius: 10px;
+}
+
+.month {
+  font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  .month {
+    font-size: 3.5rem;
+  }
+}
+
+.calendar ol li {
+  float: left;
+  width: 14.28571%;
+}
+
+.calendar .day-names {
+  border-bottom: 1px solid #eee;
+}
+
+.calendar .day-names li {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.calendar .days li {
+  border-bottom: 1px solid #eee;
+  min-height: 8rem;
+}
+
+.calendar .days li .date {
+  margin: 0.5rem 0;
+}
+
+.calendar .days li .event {
+  font-size: 0.75rem;
+  padding: 0.8rem;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 0.5rem;
+  margin-bottom: 1px;
+}
+
+.calendar .days li .event.span-2 {
+  width: 200%;
+}
+
+.calendar .days li .event.begin {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.calendar .days li .event.end {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.calendar .days li .event.clear {
+  background: none;
+}
+
+.calendar .days li:nth-child(n+29) {
+  border-bottom: none;
+}
+
+.calendar .days li.outside .date {
+  color: #ddd;
+}
+
+
+
+    </style>
     
   
 </head>
@@ -43,11 +133,11 @@
 
     <!--============= Header Section Starts Here =============-->
      <header class="header-section">
-        <div class="container">
+          <div class="container">
             <div class="header-wrapper">
                 <div class="logo">
                     <a href="index.html">
-                            <img src="./assets/mae2.png" style="height:150px; width:120px" alt="logo">
+                           <img src="./assets/mae2.png" style="height:150px; width:120px" alt="logo">
                     </a>
                 </div>
                 <ul class="menu ">
@@ -57,21 +147,40 @@
                         <a href="index.html">Inicio</a>
                     </li>
 
-                        <li>
-                        <a href="quienes_somos.html">Quienes Somos</a>
+                      
+
+                      <li>
+                         <a href="#0">Quienes Somos </a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="quienes_somos.html">Nosotros</a>
+                                    </li>
+                                    <li>
+                                        <a href="nuestro_equipo.html">Nuestro Equipo</a>
+                                    </li>
+                                   
+                                </ul>
                     </li>
                                
-                  <li>
+                   <li>
                          <a href="#0">Nuestros Streamers </a>
                                 <ul class="submenu">
+                                    <li>
+
+                                        <a href="0#">Oficial MAE</a>
+                                        <ul class="submenu">
                                     <li>
                                         <a href="team.html">Streamers</a>
                                     </li>
                                     <li>
                                         <a href="calendario_oficial.html">Calendario Oficial</a>
                                     </li>
+                                   
+                                </ul>
+                                    </li>
+                                    
                                     <li>
-                                        <a href="calendario_patrocinados.html">Calendario Patrocinados</a>
+                                        <a href="streamers_patrocinados.html">Patrocinados MAE</a>
                                     </li>
                                 </ul>
                     </li>
@@ -102,7 +211,7 @@
         </div>
         <div class="container animate__animated animate__backInLeft animate__slow">
             <div class="page-header-content cl-white">
-                <h2 class="title"> Nuestros Streaming</h2>
+                <h2 class="title"> Nuestros Streamers</h2>
                
             </div>
         </div>
@@ -117,8 +226,8 @@
                 </div>
                 <div class="team-content">
                     <div class="author">
-                        <h2 class="title">Natu Moraga</h2>
-                        <div class="info">Streaming Oficial MAE</div>
+                        <h2 class="title">Natatalia Moraga</h2>
+                        <div class="info">Streamers Patrocinado MAE</div>
                     </div>
                     <div class="team-con-wrapper">
                         <div class="team-con-area">
@@ -128,7 +237,7 @@
                                 </div>
                                 <div class="item-content">
                                     <span class="up">correo electronico:</span>
-                                    <a href="nano">maecontacto1@gmail.com</a>
+                                    <a href="nano">natu22@gmail.com</a>
                                 </div>
                             </div>
                             <ul class="team-icons">
@@ -190,8 +299,79 @@
                                 </div>
                             </div>
                         </div>
+
+                                                        <!-- Calendar -->
+  <div class="calendar shadow bg-white p-5">
+    <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
+      <h2 class="month font-weight-bold mb-5 text-uppercase">Calendario Semanal</h2>
+    </div>
+   
+    <ol class="day-names list-unstyled">
+      <li class="font-weight-bold text-uppercase">Lunes</li>
+      <li class="font-weight-bold text-uppercase">Martes</li>
+      <li class="font-weight-bold text-uppercase">Miercoles</li>
+      <li class="font-weight-bold text-uppercase">Jueves</li>
+      <li class="font-weight-bold text-uppercase">Viernes</li>
+      <li class="font-weight-bold text-uppercase">Sabado</li>
+      <li class="font-weight-bold text-uppercase">Domingo</li>
+    </ol>
+
+    <ol class="days list-unstyled">
+      <li>
+        <div class="date">1</div>
+        <div class="event bg-success">Minecraft </br> 7PM-8PM</div>
+      </li>
+      <li>
+        <div class="date">2</div>
+      </li>
+      <li>
+        <div class="date">3</div>
+      </li>
+      <li>
+        <div class="date">4</div>
+         <div class="event bg-warning">Pokemon Unite </br> 5PM-7PM</div>
+      </li>
+      <li>
+        <div class="date">5</div>
+      </li>
+      <li>
+        <div class="date">6</div>
+      </li>
+      <li>
+        <div class="date">7</div>
+      </li>
+    
+      <li class="outside">
+        <div class="date">1</div>
+      </li>
+      <li class="outside">
+        <div class="date">2</div>
+      </li>
+      <li class="outside">
+        <div class="date">3</div>
+      </li>
+      <li class="outside">
+        <div class="date">4</div>
+      </li>
+    </ol>
+  </div>
+</div>
+                      
+
+
+
+
+
+
+                </div>
+
+
+
+
                     </div>
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -233,28 +413,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-bottom">
-                <ul class="footer-link">
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-
-                        <li>
-                        <a href="quienes_somos.html">Quienes Somos</a>
-                    </li>
-
-                    <li>
-                        <a href="team.html">Nuestros Streamers </a>
-                    </li>
-                    <li>
-                        <a href="noticias.html">Noticias</a>
-                    </li>
-                    <li>
-                        <a href="videos.html">Videos</a>
-                    </li>
-                 
-                </ul>
-            </div>
+        
             <div class="copyright">
                 <p>
                     Copyright © 2021.All Rights Reserved By <a href="#0"></a>
