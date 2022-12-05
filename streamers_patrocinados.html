@@ -20,15 +20,122 @@
     <link rel="stylesheet" href="./assets/css/main.css">
          <link rel="stylesheet" href="./assets/css/catto.min.css">
       <link rel="stylesheet" href="./assets/css/animate.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="shortcut icon" href="assets/mae.png" type="image/x-icon">
+
+        <style>@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
     
-  
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+   
+    
+   
+    
+}
+
+::selection {
+    color: #fff;
+    background: #1cc7d0;
+}
+
+.wrapper {
+    height: 400px;
+    width: 320px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.wrapper .card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.wrapper:hover>.front-face {
+    transform: rotateY(-180deg);
+}
+
+.wrapper .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.wrapper .back-face {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+
+.wrapper:hover>.back-face {
+    transform: rotateY(0deg);
+}
+
+.wrapper .back-face img {
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+}
+
+.wrapper .back-face .info {
+    text-align: center;
+}
+
+.back-face .info .title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.back-face ul {
+    display: flex;
+}
+
+.back-face ul a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    margin: 0 5px;
+    line-height: 38px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+    transition: all 0.5s ease;
+}
+
+.back-face ul a:hover {
+    color: #1cc7d0;
+    border-color: #1cc7d0;
+    background: linear-gradient(375deg, transparent, transparent);
+}</style>
+    
+         <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+
 </head>
 
-
-
-<body data-spy="scroll" data-target="#faq-menu" data-offset="150">
+<body>
     <!--============= ScrollToTop Section Starts Here =============-->
     <div class="preloader">
         <div class="preloader-inner">
@@ -44,7 +151,6 @@
 
 
     <!--============= Header Section Starts Here =============-->
-      <!--============= Header Section Starts Here =============-->
      <header class="header-section">
            <div class="container">
             <div class="header-wrapper">
@@ -116,106 +222,90 @@
     </header>
     <!--============= Header Section Ends Here =============-->
 
-    <!--============= Header Section Ends Here =============-->
-
 
     <!--============= Header Section Ends Here =============-->
-    <section class="page-header single-header blog-single-header bg_img oh" data-background="./assets/images/blog/page-header.jpg">
-        <div class="bottom-shape">
-            <img src="./assets/css/img/page-header2.png" alt="css">
+    <section class="page-header bg_img" data-background="./assets/images/page-header.png">
+        <div class="bottom-shape d-none d-md-block">
+            <img src="./assets/css/img/page-header.png" alt="css">
         </div>
-    </section>
-    <!--============= Header Section Ends Here =============-->
-
-
-    
-    <!--============= Blog Section Starts Here =============-->
-    <section class="blog-single-section padding-bottom">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 mb-70 mb-lg-0">
-                   <article>
-                        <div class="post-details">
-                            <div class="post-inner">
-                                <div class="post-header">
-                                    <div class="meta-post">
-                                      
-                                    </div>
-                                    <h3 class="title">
-                                       NAVI se corona campeón de la ESL Pro League Season 14.
-                                    </h3>
-                                </div>
-                                    <img class="rounded mr-5 mt-2 mb-5 img-fluid" src="./assets/noticias/noticia_2.png" 
-                                    style="height:420px; 
-                                    width: 920px; alt="blog">  
-                                <div class="post-content">
-                                   
-                                    <div class="entry-content">
-                                      
-
-                                         <p>
-                                       NAVI  le gana 3-2 a Team Vitality  en un partido de alta tensión y muy reñido. Así el equipo ruso se corono  campeón del torneo, obteniendo 195.000 dólares y el pase directo para la BLAST Premier: World Final 2021.
-                                       </p>
-                                       
-                                       <iframe width="860" height="415" src="https://www.youtube.com/embed/qdD6Ll6g3NM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                       
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tags-area">
-                                <div class="tags">
-                                    <span>
-                                        Categoria: 
-                                    </span>
-                                    <div class="tags-item">
-                                        <a href="#0">   Counter Strike </a>
-                                      
-                                    </div>
-                                </div>
-                                <ul class="social-icons">
-                                    <li>
-                                        <a href="#0">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#0" class="active">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">
-                                            <i class="fab fa-pinterest"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#0">
-                                            <i class="fab fa-google"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                       
-                   
-                           
-                            
-                    </article>
-                </div>
+        <div class="container animate__animated animate__backInLeft animate__slow">
+            <div class="page-header-content cl-white">
+                <h2 class="title"> Sección Streamers 
+                 </h2>
+              
             </div>
         </div>
     </section>
-    <!--============= Blog Section Ends Here =============-->
+    <!--============= Header Section Ends Here =============-->
+
+
+    <!--============= Team Section Starts Here =============-->
+    <section class="team-section padding-top padding-bottom oh">
+        <div class="container ">
+            <div class="section-header animate__animated animate__backInLeft animate__slow">
+                <h5 class="cate">COMUNIDAD MAE</h5>
+                <h2 class="title mb-5"> Streamers Patrocinados </h2>
+                
+            </div>
+            <div class="row justify-content-center mb-40-none animate__animated animate__backInLeft animate__slow">
+               
+
+<div class="col-lg-4 col-md-6 ">
+    <div class="wrapper">
+    <div class="card front-face">
+        <img src="./assets/equipo/image3.jpg">
+
+    </div>
+
+
+
+    <div class="card back-face">
+        <img src="./assets/equipo/image3.jpg">
+        <div class="info">
+            <div class="title">
+                Streamers  Patrocinada</div>
+            
+               
+        </div>
+         <a 
+                                  href="natu_team.html"  class="button-2 h-float">
+                                  Ver Perfil
+                                </a>
+        <ul>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </ul>
+    </div>
+
+</div>
+
+ <h4 class="title mt-3" style="margin-left: 60px;">
+  <a href="#0">Natalia Moraga</a>
+                         </h4>
+
+</div>
+         
+
+
+
+
+
+
+
+
+
+
+  
+    </section>
+    <!--============= Team Section Ends Here =============-->
+
+    <!--============= Get Started Section Ends Here =============-->
 
 
     <!--============= Footer Section Starts Here =============-->
-   <footer class="footer-section bg_img" data-background="./assets/images/footer/footer-bg.jpg">
+     <footer class="footer-section bg_img" data-background="./assets/images/footer/footer-bg.jpg">
         <div class="container">
             <div class="footer-top padding-top padding-bottom">
                 <div class="logo">
@@ -237,7 +327,7 @@
                     </li>
                 </ul>
             </div>
-       
+          
             <div class="copyright">
                 <p>
                     Copyright © 2021.All Rights Reserved By <a href="#0"></a>
@@ -247,7 +337,7 @@
     </footer>
     <!--============= Footer Section Ends Here =============-->
 
-<script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
     <script src="./assets/js/modernizr-3.6.0.min.js"></script>
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
